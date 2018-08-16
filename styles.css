@@ -31,11 +31,22 @@ body{
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
-  margin: 20px 0 10px 10px;
+  margin: 20px 0 0 10px;
   padding: 15px 20px;
+  z-index: 1;
 }
 
-.app__wrapper__label{
+.results {
+  width: 300px !important;
+  height: 289px;
+  background-color: #eaf6fa;
+  padding-top: 41px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin: -20px 0 0 10px;
+}
+
+.app__label{
   width: 260px;
   height: 20px;
   font-family: HelveticaNeue;
@@ -49,11 +60,17 @@ body{
   color: #3e3d3f;
 }
 
-.app__wrapper__separator{
+.app__separator{
   width: 260px;
   height: 2px;
   border-top: solid 1px #cacaca;
   margin-top: 5px;
+}
+
+.results__separator{
+  width: 192px;
+  height: 2px;
+  border-top: solid 1px #cacaca;
 }
 
 .input__label {
@@ -152,7 +169,7 @@ input[type=range]::-webkit-slider-thumb:before {
 }
 
 .loan_amount__value{
-  width: 260px;
+  width: 280px;
   height: 40px;
   padding-left: 30px;
   border-radius: 4px;
@@ -162,7 +179,7 @@ input[type=range]::-webkit-slider-thumb:before {
 }
 
 .annual_tax__value, .annual_insurance__value{
-  width: 120px !important;
+  width: 120px;
   height: 40px;
   padding-left: 30px;
   border-radius: 4px;
@@ -205,19 +222,123 @@ input[type=range]::-webkit-slider-thumb:before {
   margin-right: auto;
   margin-left: auto;
 }
+
+.results__title {
+  height: 30px;
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+  margin-bottom: 19px;
+}
+
+.results_label{
+  height: 30px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+.results_value{
+  height: 30px;
+  opacity: 0.2;
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+  margin-bottom: 12px;
+}
+
+.results_mortage__label {
+  height: 30px;
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
+  .app__title__separator{
+    width: 700px;
+  }
+  .calculator {
+    height: 422px;
+  }
+  .results{
+    margin-top: 48px;
+    margin-left: -20px;
+    height: 320px;
+    width: 200px !important;
+    padding-top: 36px;
+    padding-left: 66px;
+    padding-right: 46px;
+    padding-bottom: 35px;
+  }  
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+  .app__title__separator{
+    width: 920px;
+  }
+  .calculator {
+    height: 422px;
+  }
+  .results{
+    margin-top: 48px;
+    margin-left: -20px;
+    height: 320px;
+    width: 200px !important;
+    padding-top: 36px;
+    padding-left: 66px;
+    padding-right: 46px;
+    padding-bottom: 35px;
+  }  
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+  .app__title__separator{
+      width: 1120px;
+  }
+  .calculator {
+    width: 300px;
+    height: 422px;
+  }
+  .results{
+    margin-top: 48px;
+    margin-left: -20px;
+    height: 320px;
+    width: 200px !important;
+    padding-top: 36px;
+    padding-left: 66px;
+    padding-right: 46px;
+    padding-bottom: 35px;
   }
 }
 .row {
@@ -261,6 +382,39 @@ input[type=range]::-webkit-slider-thumb:before {
 .small__phone-1 {
   width: 10%; 
 }
+.small__phone-offset-10 {
+  margin-left: 100%;
+}
+.small__phone-offset-9 {
+  margin-left: 90%;
+}
+.small__phone-offset-8 {
+  margin-left: 80%;
+}
+.small__phone-offset-7 {
+  margin-left: 70%;
+}
+.small__phone-offset-6 {
+  margin-left: 60%;
+}
+.small__phone-offset-5 {
+  margin-left: 50%;
+}
+.small__phone-offset-4 {
+  margin-left: 40%;
+}
+.small__phone-offset-3 {
+  margin-left: 30%;
+}
+.small__phone-offset-2 {
+  margin-left: 20%;
+}
+.small__phone-offset-1 {
+  margin-left: 10%;
+}
+.small__phone-offset-0 {
+  margin-left: 0;
+}
 
 @media (min-width: 768px) {
   .mid__phone-1, .mid__phone-2, .mid__phone-3, .mid__phone-4, .mid__phone-5, .mid__phone-6, .mid__phone-7, .mid__phone-8, .mid__phone-9, .mid__phone-10{
@@ -295,6 +449,39 @@ input[type=range]::-webkit-slider-thumb:before {
   }
   .mid__phone-1 {
     width: 10% 
+  }
+  .mid__phone-offset-10 {
+    margin-left: 100%;
+  }
+.mid__phone-offset-9 {
+    margin-left: 90%;
+  }
+.mid__phone-offset-8 {
+    margin-left: 80%;
+  }
+.mid__phone-offset-7 {
+    margin-left: 70%;
+  }
+.mid__phone-offset-6 {
+    margin-left: 60%;
+  }
+.mid__phone-offset-5 {
+    margin-left: 50%;
+  }
+.mid__phone-offset-4 {
+    margin-left: 40%;
+  }
+.mid__phone-offset-3 {
+    margin-left: 30%;
+  }
+.mid__phone-offset-2 {
+    margin-left: 20%;
+  }
+.mid__phone-offset-1 {
+    margin-left: 10%;
+  }
+.mid__phone-offset-0 {
+    margin-left: 0;
   }
 }
 @media (min-width: 992px) {
@@ -331,6 +518,39 @@ input[type=range]::-webkit-slider-thumb:before {
   .tablet-1 {
     width: 10%; 
   }
+  .tablet-offset-10 {
+    margin-left: 100%;
+  }
+.tablet-offset-9 {
+    margin-left: 90%;
+  }
+.tablet-offset-8 {
+    margin-left: 80%;
+  }
+.tablet-offset-7 {
+    margin-left: 70%;
+  }
+.tablet-offset-6 {
+    margin-left: 60%;
+  }
+.tablet-offset-5 {
+    margin-left: 50%;
+  }
+.tablet-offset-4 {
+    margin-left: 40%;
+  }
+.tablet-offset-3 {
+    margin-left: 30%;
+  }
+.tablet-offset-2 {
+    margin-left: 20%;
+  }
+.tablet-offset-1 {
+    margin-left: 10%;
+  }
+.tablet-offset-0 {
+    margin-left: 0;
+  }
 }
 @media (min-width: 1200px) {
   .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10{
@@ -365,5 +585,38 @@ input[type=range]::-webkit-slider-thumb:before {
   }
   .desktop-1 {
     width: 10%;
+  }
+  .desktop-offset-10 {
+    margin-left: 100%;
+  }
+.desktop-offset-9 {
+    margin-left: 90%;
+  }
+.desktop-offset-8 {
+    margin-left: 80%;
+  }
+.desktop-offset-7 {
+    margin-left: 70%;
+  }
+.desktop-offset-6 {
+    margin-left: 60%;
+  }
+.desktop-offset-5 {
+    margin-left: 50%;
+  }
+.desktop-offset-4 {
+    margin-left: 40%;
+  }
+.desktop-offset-3 {
+    margin-left: 30%;
+  }
+.desktop-offset-2 {
+    margin-left: 20%;
+  }
+.desktop-offset-1 {
+    margin-left: 10%;
+  }
+.desktop-offset-0 {
+    margin-left: 0;
   }
 }

@@ -19,13 +19,12 @@
         <![endif]-->
             <h2 class="app__title">Mortgage Calculator</h2>
             <div class="app__title__separator"></div>
-            <div class="calculator">  
-                <span class="app__wrapper__label">Change values to calculate your results</span>
-                <div class="app__wrapper__separator"></div>
-
-                <div class="row">
+            <div class="row">
+                
+                <div class="calculator small__phone-10 mid__phone-offset-1 mid__phone-4 tablet-offset-1 tablet-4 desktop-offset-2 desktop-3">
+                    <span class="app__label">Change values to calculate your results</span>
+                    <div class="app__separator"></div>
                     <form class="mortage__form">
-
 
                         <div class="form__group small__phone-10">
                             <label class="small__phone-10 input__label" for="years_mortage">Years of mortgage</label>
@@ -70,10 +69,26 @@
                         <div class="form__group small__phone-10">
                             <button type="button" class="btn">Calculate</button>                    
                         </div>
-                    </div>
+                    </form>
+                </div>
+
+                <div class="results small__phone-10 mid__phone-3 tablet-2 desktop-2">
+                    
+                    <div class="results__title"> Your results </div>
+                    <div class="results_label">Principle & Interest</div>
+                    <div id="interest_value" class="results_value">$ - -</div> 
+                    <div class="results_label">Tax</div>
+                    <div id="tax_value" class="results_value">$ - -</div> 
+                    <div class="results_label">Insurance</div>
+                    <div id="insurance_value" class="results_value">$ - -</div> 
+                    <div class="results__separator"></div>
+                    <div class="results_mortage__label"> Total Monthly Payment </div>
+                    <div class="results_value">$ - -</div>
 
                 </div>
-            </form>
+
+
+            </div>
         </div>
         <script src="mortage.js" async defer></script>
     </body>
