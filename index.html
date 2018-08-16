@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mortage Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h2 class="app__title">Mortgage Calculator</h2>
+        <div class="app__title__separator"></div>
+        <div class="wrapping">  
+            <span class="app__wrapper__label">Change values to calculate your results</span>
+            <div class="app__wrapper__separator"></div>
+
+            <form class="mortage__form">
+                <div class="form__group col-xs-12">
+                    <label class="input__label" for="years_mortage">Years of mortgage</label>
+                    <span class="input__min__value__label"> 1 </span>
+                    <input class="years_mortage__range" type="range" name="years_mortage" id="years_mortage" min="1" max="40" step="1">
+                    <span class="input__max__value__label"> 40 </span>
+                    <input class="years_mortage__value" type="text" readonly="readonly"  name="years_mortage" id="years_mortage">
+                </div>
+                <div class="form__group col-xs-12">
+                    <label class="input__label" for="rate_interest">Rate of interest (%)</label>
+                    <span class="input__min__value__label"> 0.1 </span>
+                    <input class="rate_interest__range" type="range" name="rate_interest" id="rate_interest" min="0.1" max="10" step="0.1">
+                    <span class="input__max__value__label"> 10 </span>
+                    <input class="rate_interest__value" type="text" readonly="readonly"  name="rate_interest" id="rate_interest">
+                </div>
+
+                <div class="form__group col-xs-12">
+                    <label class="input__label" for="loan_amount">Loan Amount</label>
+                    <div class="input__container">
+                        <span class="input__addon">$</span>
+                        <input class="loan_amount__value" type="number" name="loan_amount" id="loan_amount">
+                    </div>
+                </div>
+
+                <div class="form__group col-xs-6">
+                    <label class="input__label" for="annual_tax">Annual Tax</label>
+                    <div class="input__container">
+                        <span class="input__addon">$</span>
+                        <input class="annual_tax__value" type="number" name="annual_tax" id="annual_tax">
+                    </div>
+                </div>
+
+                <div class="form__group col-xs-6">
+                    <label class="input__label" for="annual_insurance">Annual Insurance</label>
+                    <div class="input__container">
+                        <span class="input__addon">$</span>
+                        <input class="annual_insurance__value" type="number" name="annual_insurance" id="annual_insurance">
+                    </div>
+                </div>
+
+                <div class="form__group col-xs-12">
+                    <button type="button" class="btn">Calculate</button>                    
+                </div>
+
+            </form>
+        </div>
+
+        <script src="mortage.js" async defer></script>
+    </body>
+</html>
