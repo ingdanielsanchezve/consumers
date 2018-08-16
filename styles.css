@@ -1,6 +1,5 @@
 body{
     width: 320px;
-    height: 900px;
 }
 
 .app__title{
@@ -138,6 +137,7 @@ body{
 .years_mortage__range::-webkit-slider-thumb, .rate_interest__range::-webkit-slider-thumb {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+  cursor: ew-resize;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -277,7 +277,7 @@ body{
   color: #3e3d3f;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -369,7 +369,7 @@ body{
     margin-top: 19px;
   }
   .results_mortage__value{
-    margin-top: 15px;
+    margin-top: 19px;
   }
   .results_label, .results_mortage__label{
     float: left;
@@ -486,7 +486,7 @@ body{
   margin-left: 0;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .mid__phone-1, .mid__phone-2, .mid__phone-3, .mid__phone-4, .mid__phone-5, .mid__phone-6, .mid__phone-7, .mid__phone-8, .mid__phone-9, .mid__phone-10{
     float: left;
   }
