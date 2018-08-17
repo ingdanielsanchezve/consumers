@@ -120,7 +120,7 @@ body{
     background-size: 90% 8px;
     background-repeat: no-repeat;
     -webkit-appearance: none;
-    width: 154px;;
+    width: 175px !important;
     height: 36px;
     border-radius: 100px;
     overflow: hidden;
@@ -169,7 +169,7 @@ body{
 }
 
 .loan_amount__value{
-  width: 280px;
+  width: 270px;
   height: 40px;
   padding-left: 30px;
   border-radius: 4px;
@@ -179,13 +179,17 @@ body{
 }
 
 .annual_tax__value, .annual_insurance__value{
-  width: 120px;
+  width: 100px !important;
   height: 40px;
   padding-left: 30px;
   border-radius: 4px;
   background-color: #ffffff;
   border: solid 1px #a6a6a6;
   display: inline-block;
+}
+
+.annual_insurance__value, .annual_insurance__label, .annual_insurance__addon{
+  margin-left: 20px;
 }
 
 .btn{
@@ -307,6 +311,16 @@ body{
   }
   .calculator {
     height: 422px;
+    width: 340px !important;
+  }
+  .years_mortage__range, .rate_interest__range {
+     width: 198px !important;
+  }
+  .loan_amount__value{
+    width: 308px !important;
+  }
+  .annual_tax__value, .annual_insurance__value{
+    width: 118px !important;
   }
   .results{
     margin-top: 48px;
