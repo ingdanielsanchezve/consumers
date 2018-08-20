@@ -18,6 +18,7 @@
     if (checkMobile()){
         document.getElementById("resultsPanel").style.maxHeight = "0";
         document.getElementById("resultsPanel").style.overflow = "hidden";
+        document.getElementById("resultsPanel").style.transition = "max-height 1s ease-out";
         document.getElementById("resultsPanel").style.display = "none";
     }
 
@@ -77,9 +78,25 @@
         document.getElementById(element).innerHTML = "$ " + value.toFixed(2);
     }
 
+    function validateFields(){
+        var fields = ["loan_amount", "annual_tax", "annual_insurance"];        
+        var errors = ["Loan Amount is mandatory", "Annual Tax is mandatory", "Annual Insurance is mandatory"];
+        var error_labels = ["loan_amount_err_label", "annual_tax_err_label", "annual_insurance_err_label"];
+        var valid = true;
+
+        for (var i = 0; i < fields.length; i++) {
+            if (document.getElementById(fields[i]).value == "") {
+                document.getElementById(fields[i]).style.border = "solid 1px #da3535";
+                document.getElementById(error_labels[i]).innerHTML = (checkMobile()) ? 'Mandatory filed' : errors[i];
+                valid = false;
+            }
+        }
+        return valid;
+    }
+
     function calculateMortage(){
 
-        if (!validFields()){
+        if (!validateFields()){
              return;
         }else{
 
