@@ -18,6 +18,7 @@
     if (checkMobile()){
         document.getElementById("resultsPanel").style.maxHeight = "0";
         document.getElementById("resultsPanel").style.overflow = "hidden";
+        document.getElementById("resultsPanel").style.display = "none";
     }
 
     function showInterest(){
@@ -54,6 +55,7 @@
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {
+            panel.style.display = 'block';
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     }
