@@ -112,7 +112,7 @@ body{
   margin-top: 12px;
 }
 
-.years_mortage__range, .rate_interest__range {
+.years_mortage__range, .interest_rate__range {
     -webkit-appearance: none;
     display: inline-block;
     background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
@@ -130,11 +130,11 @@ body{
     outline: none;
 }
 
-.years_mortage__range::-webkit-slider-thumb, .rate_interest__range::-webkit-slider-thumb {
+.years_mortage__range::-webkit-slider-thumb, .interest_rate__range::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
-.years_mortage__range::-webkit-slider-thumb, .rate_interest__range::-webkit-slider-thumb {
+.years_mortage__range::-webkit-slider-thumb, .interest_rate__range::-webkit-slider-thumb {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   cursor: ew-resize;
@@ -149,7 +149,7 @@ body{
   position: relative;
 }
 
-.years_mortage__range::-webkit-slider-thumb:before, .rate_interest__range::-webkit-slider-thumb:before {
+.years_mortage__range::-webkit-slider-thumb:before, .interest_rate__range::-webkit-slider-thumb:before {
   position: absolute;
   top: 8px;
   left: -2000px;
@@ -159,13 +159,15 @@ body{
   content: ' ';
 }
 
-.years_mortage__value, .rate_interest__value {
+.years_mortage__value, .interest_rate__value {
   width: 50px;
   height: 40px;
   border-radius: 4px;
   background-color: #ffffff;
   border: solid 1px #a6a6a6;
   display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .loan_amount__value{
@@ -190,6 +192,12 @@ body{
 
 .annual_insurance__value, .annual_insurance__label, .annual_insurance__addon{
   margin-left: 20px;
+}
+
+input[type=number]:focus {
+  -webkit-box-shadow: none;
+  box-shadow: 0 0 4px 0 rgba(62, 61, 63, 0.62);
+  outline: solid 1px #3e3d3f;
 }
 
 .btn{
@@ -268,6 +276,33 @@ body{
   margin-bottom: 12px;
 }
 
+.results_value_display{
+  height: 30px;
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+  margin-bottom: 12px;  
+}
+
+.results_value_display_mobile{
+  height: 16px;
+  font-family: SFUIDisplay;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #3e3d3f;
+}
+
 .results_mortage__label {
   height: 30px;
   font-family: HelveticaNeue;
@@ -313,7 +348,7 @@ body{
     height: 422px;
     width: 340px !important;
   }
-  .years_mortage__range, .rate_interest__range {
+  .years_mortage__range, .interest_rate__range {
      width: 198px !important;
   }
   .loan_amount__value{
@@ -382,7 +417,7 @@ body{
   .results_mortage__label{
     margin-top: 19px;
   }
-  .results_mortage__value{
+  .results_mortage_value{
     margin-top: 19px;
   }
   .results_label, .results_mortage__label{
@@ -411,7 +446,7 @@ body{
     text-align: right;
     color: #3e3d3f;
   }
-  .results_mortage__value {
+  .results_mortage_value {
     float: right;
     height: 21px;
     font-family: SFUIDisplay;

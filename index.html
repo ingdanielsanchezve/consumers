@@ -29,17 +29,17 @@
                         <div class="form__group small__phone-10">
                             <label class="small__phone-10 input__label" for="years_mortage">Years of mortgage</label>
                             <span class="small__phone-1 input__min__value__label"> 1 </span>
-                            <input class="small__phone-5 years_mortage__range" type="range" name="years_mortage" id="years_mortage" min="1" max="40" step="1">
+                            <input class="small__phone-5 years_mortage__range" type="range" name="years_mortage_range" id="years_mortage_range" min="1" max="40" step="1" value="0">
                             <span class="small__phone-1 input__max__value__label"> 40 </span>
-                            <input class="small__phone-2 years_mortage__value" type="text" readonly="readonly"  name="years_mortage" id="years_mortage">
+                            <input class="small__phone-2 years_mortage__value" type="text" readonly="readonly" value="0" name="years_mortage" id="years_mortage">
                         </div>
                         
                         <div class="form__group small__phone-10">
-                            <label class="small__phone-10 input__label" for="rate_interest">Rate of interest (%)</label>
+                            <label class="small__phone-10 input__label" for="interest_rate">Rate of interest (%)</label>
                             <span class="small__phone-1 input__min__value__label"> 0.1 </span>
-                            <input class="small__phone-5 rate_interest__range" type="range" name="rate_interest" id="rate_interest" min="0.1" max="10" step="0.1">
+                            <input class="small__phone-5 interest_rate__range" type="range" name="interest_rate_range" id="interest_rate_range" min="0.1" max="10" step="0.1" value="0">
                             <span class="small__phone-1 input__max__value__label"> 10 </span>
-                            <input class="small__phone-2 rate_interest__value" type="text" readonly="readonly"  name="rate_interest" id="rate_interest">
+                            <input class="small__phone-2 interest_rate__value" type="text" readonly="readonly" value="0" name="interest_rate" id="interest_rate">
                         </div>
 
                         <div class="form__group small__phone-10">
@@ -67,33 +67,30 @@
                         </div>
 
                         <div class="form__group small__phone-10">
-                            <button type="button" class="btn">Calculate</button>                    
+                            <button type="button" class="btn" id="calcMortageBtn">Calculate</button>                    
                         </div>
                     </form>
                 </div>
 
-                <div class="results small__phone-10 mid__phone-3 tablet-2 desktop-2">
+                <div id="resultsPanel" class="results small__phone-10 mid__phone-3 tablet-2 desktop-2">
                     
                     <div class="show__small_phones">
-                        <div class="results__title"> Your results </div>
                         
+                        <div class="results__title"> Your results </div>                        
                         <div class="results__group">
                             <div class="results_label">Principle & Interest</div>
-                            <div id="interest_value" class="results_value">$ - -</div>
-                        </div>
-                        
+                            <div id="interest_value_mobile" class="results_value">$ - -</div>
+                        </div>                        
                         <div class="results__group">
                             <div class="results_label">Tax</div>
-                            <div id="tax_value" class="results_value">$ - -</div>
+                            <div id="tax_value_mobile" class="results_value">$ - -</div>
                         </div>
-
                         <div class="results__group">
                             <div class="results_label">Insurance</div>
-                            <div id="insurance_value" class="results_value">$ - -</div>
+                            <div id="insurance_value_mobile" class="results_value">$ - -</div>
                         </div>
-
                         <div class="results_mortage__label"> Total Monthly Payment </div>
-                        <div class="results_mortage__value">$ - -</div>
+                        <div id="mortage_value_mobile" class="results_mortage_value">$ - -</div>
 
                     </div>
 
@@ -107,7 +104,7 @@
                         <div id="insurance_value" class="results_value">$ - -</div> 
                         <div class="results__separator"></div>
                         <div class="results_mortage__label"> Total Monthly Payment </div>
-                        <div class="results_value">$ - -</div>
+                        <div id="mortage_value" class="results_value">$ - -</div>
                     </div>
 
                 </div>
