@@ -1,6 +1,3 @@
-body{
-}
-
 .app__title{
   height: 24px;
   font-family: HelveticaNeue;
@@ -22,7 +19,7 @@ body{
 }
 
 .calculator {
-  width: 300px;
+  width: 300px !important;
   height: 450px;
   object-fit: contain;
   border-radius: 4px;
@@ -34,7 +31,7 @@ body{
 }
 
 .results {
-  width: 300px !important;
+  width: 295px !important;
   height: 289px;
   background-color: #eaf6fa;
   padding-top: 41px;
@@ -80,7 +77,6 @@ body{
   text-align: left;
   color: #3e3d3f;
   display: block;
-  max-width: 182px;
 }
 
 .form__group{
@@ -94,7 +90,7 @@ body{
 }
 
 .input__min__value__label, .input__max__value__label {
-  height: 36px;
+  /* height: 36px; */
   font-family: HelveticaNeue;
   font-size: 14px;
   font-weight: normal;
@@ -119,7 +115,7 @@ body{
     height: 36px;
     border-radius: 100px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: 5px;
     vertical-align: middle;
     outline: none;
@@ -219,7 +215,7 @@ body{
 }
 
 .years_mortage__value, .interest_rate__value {
-  width: 50px;
+  width: 50px !important;
   height: 40px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -230,7 +226,7 @@ body{
 }
 
 .loan_amount__value{
-  width: 270px;
+  width: 260px;
   height: 40px;
   padding-left: 30px;
   border-radius: 4px;
@@ -250,7 +246,7 @@ body{
 }
 
 .annual_insurance__value, .annual_insurance__label, .annual_insurance__addon, .insurance_err_label{
-  margin-left: 20px;
+  margin-left: 11px;
 }
 
 input[type=number]:focus {
@@ -273,18 +269,19 @@ input[type=number]:focus {
   letter-spacing: 0.6px;
   text-align: center;
   color: #ffffff;
-  margin-top: 20px;
 }
 
 .input__container {
     position:relative;
     width: 182px;
+    margin-top: 5px;
 }
 
 .input__addon {
   position:absolute;
+  font-size: 16px;
   top:11px;
-  left:15px;
+  left: 25px;
 }
 
 .container {
@@ -362,7 +359,7 @@ input[type=number]:focus {
 .results_mortage__label {
   margin-top: 20px;
   font-family: HelveticaNeue;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -373,7 +370,7 @@ input[type=number]:focus {
 }
 
 .error_label {
-  height: 12px;
+  height: 15px;
   font-family: HelveticaNeue;
   font-size: 10px;
   font-weight: bold;
@@ -384,10 +381,10 @@ input[type=number]:focus {
   text-align: left;
   color: #da3535;
   display: block;
-  margin-bottom: 5px;
+  padding-bottom: 12px;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 750px) {
   .container {
     width: 750px;
   }
@@ -438,8 +435,8 @@ input[type=number]:focus {
     padding-right: 46px;
     padding-bottom: 35px;
   }  
-}
-@media (min-width: 1200px) {
+}*/
+@media (min-width: 750px) {
   .container {
     width: 900px;
     margin: 0 auto;
@@ -485,7 +482,8 @@ input[type=number]:focus {
   }
   .form__group{
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: -3px;
+    padding-bottom: 15px;
   }
   .input__min__value__label, .input__max__value__label {
     width: 24px  !important;
@@ -501,13 +499,16 @@ input[type=number]:focus {
     letter-spacing: 0.2px;
     text-align: left;
     color: #3e3d3f;
+    /* margin-top: 5px; */
   }
   .years_mortage__value, .interest_rate__value {
     width: 60px !important;
-    margin-left: 9px;
+    margin-left: 7px;
+    margin-top: -2px;
+    font-size: 16px;
   }
   .years_mortage__range, .interest_rate__range {
-     width: 291px !important;
+     width: 269px !important;
   }
   .loan_amount__value{
     width: 357px !important;
@@ -515,9 +516,12 @@ input[type=number]:focus {
   .annual_tax__value, .annual_insurance__value{
     width: 152px !important;
   }  
+  .annual_tax__label, .annual_insurance__label{
+    margin-top: 7px;
+  }
   .btn{
     width: 100%;
-    height: 40px;
+    height: 45px;
     border-radius: 4px;
     background-color: #0077c0;
     font-family: HelveticaNeue;
@@ -529,6 +533,7 @@ input[type=number]:focus {
     letter-spacing: 0.3px;
     text-align: center;
     color: #ffffff;
+    margin-top: 13px;
   }
   .calculator {
     width: 390px !important;
@@ -541,7 +546,7 @@ input[type=number]:focus {
     margin-top: 66px;
     margin-left: -20px;
     height: 350px;
-    width: 200px !important;
+    width: 185px !important;
     padding-top: 36px;
     padding-left: 62px;
     padding-right: 46px;
@@ -556,7 +561,7 @@ input[type=number]:focus {
   display: none !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 750px) {
   .show__small_phones {
     display: block !important;
   }
@@ -657,7 +662,7 @@ input[type=number]:focus {
   width: 20%; 
 }
 .small__phone-1 {
-  width: 10%; 
+  width: 10%;
 }
 .small__phone-offset-10 {
   margin-left: 100%;
@@ -693,7 +698,7 @@ input[type=number]:focus {
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .mid__phone-1, .mid__phone-2, .mid__phone-3, .mid__phone-4, .mid__phone-5, .mid__phone-6, .mid__phone-7, .mid__phone-8, .mid__phone-9, .mid__phone-10{
     float: left;
   }
