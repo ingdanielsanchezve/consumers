@@ -1,9 +1,7 @@
 body{
-    width: 320px;
 }
 
 .app__title{
-  width: 220px;
   height: 24px;
   font-family: HelveticaNeue;
   font-size: 20px;
@@ -18,7 +16,7 @@ body{
 }
 .app__title__separator{
   width: 300px;
-  height: 1px;  
+  height: 1px;
   border-top: solid 1px #cacaca;
   margin: 10px 0 0 20px;
 }
@@ -46,7 +44,6 @@ body{
 }
 
 .app__label{
-  width: 260px;
   height: 20px;
   font-family: HelveticaNeue;
   font-size: 12px;
@@ -73,8 +70,6 @@ body{
 }
 
 .input__label {
-  width: 109px;
-  height: 20px;
   font-family: HelveticaNeue;
   font-size: 12px;
   font-weight: bold;
@@ -85,13 +80,12 @@ body{
   text-align: left;
   color: #3e3d3f;
   display: block;
-  max-width: 100%;
-  margin-bottom: 5px;
+  max-width: 182px;
 }
 
 .form__group{
   width: 260px;
-  height: 74px;
+  height: 67px;
   margin-top: 10px;
 }
 
@@ -110,7 +104,7 @@ body{
   letter-spacing: 0.3px;
   text-align: left;
   color: #3e3d3f;
-  margin-top: 12px;
+  margin-top: 11px;
 }
 
 .years_mortage__range, .interest_rate__range {
@@ -151,6 +145,70 @@ body{
 }
 
 .years_mortage__range::-webkit-slider-thumb:before, .interest_rate__range::-webkit-slider-thumb:before {
+  position: absolute;
+  top: 8px;
+  left: -2000px;
+  width: 2000px;
+  height: 8px;
+  background: #1091cc;
+  content: ' ';
+}
+
+.years_mortage__range::-webkit-slider-runnable-track, .interest_rate__range::-webkit-slider-runnable-track {
+  border-radius: 20px;
+  cursor: ew-resize;
+}
+
+
+.years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
+    -moz-appearance: none;
+}
+
+.years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+  cursor: ew-resize;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-appearance: none;
+  background-color: #fff;
+  pointer-events: none;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.years_mortage__range::-moz-range-thumb:before, .interest_rate__range::-moz-range-thumb:before {
+  position: absolute;
+  top: 8px;
+  left: -2000px;
+  width: 2000px;
+  height: 8px;
+  background: #1091cc;
+  content: ' ';
+}
+
+.years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
+    -moz-appearance: none;
+}
+
+.years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+  cursor: ew-resize;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-appearance: none;
+  background-color: #fff;
+  pointer-events: none;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.years_mortage__range::-ms-thumb:before, .interest_rate__range::-ms-thumb:before {
   position: absolute;
   top: 8px;
   left: -2000px;
@@ -220,7 +278,7 @@ input[type=number]:focus {
 
 .input__container {
     position:relative;
-    width: auto;
+    width: 182px;
 }
 
 .input__addon {
@@ -386,17 +444,104 @@ input[type=number]:focus {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 900px;
+    margin: 0 auto;
+  }
+  .app__title{
+    height: 30px;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: #005175;
   }
   .app__title__separator{
-      width: 1120px;
+      width: 820px;
+      margin-top: 15px;
+      margin-left: 25px;
+  }
+  .app__label{
+    width: 391px;
+    height: 24px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #3e3d3f;
+  }
+  .app__separator{
+    width: 391px;
+    margin-top: 10.5px !important;
+  }
+  .mortage__form{
+    margin-top: 35px;
+  }
+  .form__group{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .input__min__value__label, .input__max__value__label {
+    width: 24px  !important;
+    font-size: 16px;
+  }
+  .input__label{
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #3e3d3f;
+  }
+  .years_mortage__value, .interest_rate__value {
+    width: 60px !important;
+    margin-left: 9px;
+  }
+  .years_mortage__range, .interest_rate__range {
+     width: 291px !important;
+  }
+  .loan_amount__value{
+    width: 357px !important;
+  }
+  .annual_tax__value, .annual_insurance__value{
+    width: 152px !important;
+  }  
+  .btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #0077c0;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
   }
   .calculator {
-    width: 300px;
-    height: 460px;
+    width: 390px !important;
+    height: 474px;
+    padding-top: 34px;
+    padding-left: 40px;
+    padding-right: 40px !important;
   }
   .results{
-    margin-top: 48px;
+    margin-top: 66px;
     margin-left: -20px;
     height: 350px;
     width: 200px !important;
@@ -714,6 +859,8 @@ input[type=number]:focus {
   }
   .desktop-3 {
     width: 30%;
+    margin-left: 65px;
+    margin-top: 25px;
   }
   .desktop-2 {
     width: 20%;
