@@ -228,7 +228,7 @@
 .loan_amount__value{
   width: 260px;
   height: 40px;
-  padding-left: 30px;
+  padding-left: 40px;
   border-radius: 4px;
   background-color: #ffffff;
   border: solid 1px #a6a6a6;
@@ -238,7 +238,7 @@
 .annual_tax__value, .annual_insurance__value{
   width: 100px !important;
   height: 40px;
-  padding-left: 30px;
+  padding-left: 40px;
   border-radius: 4px;
   background-color: #ffffff;
   border: solid 1px #a6a6a6;
