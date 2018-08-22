@@ -295,7 +295,6 @@ input[type=number]:focus {
 }
 
 .results__title {
-  height: 30px;
   font-family: HelveticaNeue;
   font-size: 22px;
   font-weight: normal;
@@ -305,23 +304,21 @@ input[type=number]:focus {
   letter-spacing: normal;
   text-align: left;
   color: #3e3d3f;
-  margin-bottom: 19px;
+  margin-bottom: 30px;
 }
 
 .results_label{
-  height: 30px;
   font-family: HelveticaNeue;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 2.14;
+  line-height: 2.05;
   letter-spacing: normal;
   text-align: left;
   color: #3e3d3f;
 }
 .results_value{
-  height: 30px;
   opacity: 0.2;
   font-family: HelveticaNeue;
   font-size: 18px;
@@ -332,7 +329,7 @@ input[type=number]:focus {
   letter-spacing: normal;
   text-align: left;
   color: #3e3d3f;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .results_value_display{
@@ -363,7 +360,7 @@ input[type=number]:focus {
 }
 
 .results_mortage__label {
-  height: 30px;
+  margin-top: 20px;
   font-family: HelveticaNeue;
   font-size: 18px;
   font-weight: normal;
@@ -546,7 +543,7 @@ input[type=number]:focus {
     height: 350px;
     width: 200px !important;
     padding-top: 36px;
-    padding-left: 66px;
+    padding-left: 62px;
     padding-right: 46px;
     padding-bottom: 35px;
   }
