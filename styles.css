@@ -543,9 +543,10 @@ input[type=number]:focus {
     padding-right: 40px !important;
   }
   .results{
+    /* border: solid; */
     margin-top: 66px;
     margin-left: -20px;
-    height: 350px;
+    height: 368px;
     width: 185px !important;
     padding-top: 36px;
     padding-left: 62px;
