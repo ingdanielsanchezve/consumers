@@ -310,6 +310,10 @@ input[type=number]:focus {
   color: #ffffff;
 }
 
+.monthly_err_label{
+  display: none
+}
+
 .input__container {
     position:relative;
     width: 182px;
@@ -419,7 +423,7 @@ input[type=number]:focus {
   letter-spacing: 0.2px;
   text-align: left;
   color: #da3535;
-  display: block;
+  display: no;
   padding-bottom: 12px;
 }
 

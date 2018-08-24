@@ -96,10 +96,12 @@
 
         if (document.getElementById("years_mortage").value == "" || document.getElementById("years_mortage").value == "0") {
             document.getElementById("monthly_err_label").innerHTML = "Invalid Years of Mortage";
+            document.getElementById("monthly_err_label").style.display = "block";            
             valid = false;
         }
         if (document.getElementById("interest_rate").value == "" || document.getElementById("interest_rate").value == "0") {
             document.getElementById("monthly_err_label").innerHTML = "Invalid Rate of Interest";
+            document.getElementById("monthly_err_label").style.display = "block";            
             valid = false;
         }        
             
