@@ -63,7 +63,7 @@
 
     function showResults(elementId, value, isMobile){
 
-        field = document.getElementById(elementId);
+        var field = document.getElementById(elementId);
 
         if (isMobile) {
             field.className = "results_value_display_mobile";
@@ -103,7 +103,7 @@
         for (var i = 0; i < ranges.length; i++) {
 
             var rangeField = document.getElementById(ranges[i]);
-            
+
             if (rangeField.value == "" || rangeField.value == "0") {
                 err_label.innerHTML = ranges_errors_msg[i];
                 err_label.style.display = "block";
@@ -122,7 +122,7 @@
 
     function calculateMortage(){
 
-        if (!validateFields){
+        if (!validateFields()){
              return;
         }else{
 
