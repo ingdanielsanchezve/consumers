@@ -230,10 +230,9 @@
     background-size: 90% 8px;
     background-repeat: no-repeat;
     width: 175px !important;
-    height: 36px;
     border-radius: 100px;
     overflow: hidden;
-    margin-top: 3px;
+    margin-top: -12px;
     margin-bottom: 5px;
     vertical-align: middle;
     outline: none;
