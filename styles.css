@@ -195,13 +195,11 @@ input[type=range]:focus::-ms-fill-upper {
 
 @-moz-document url-prefix() {
 
-  .years_mortage__range, .interest_rate__range {
-    -webkit-appearance: none;
+  .years_mortage__range::-moz-range-track, .interest_rate__range::-moz-range-track {
     display: inline-block;
     background-position: center;
     background-size: 90% 8px;
     background-repeat: no-repeat;
-    -webkit-appearance: none;
     width: 250px !important;
     height: 36px;
     border-radius: 100px;
