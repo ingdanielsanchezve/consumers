@@ -121,31 +121,6 @@
     outline: none;
 }
 
-.years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
-    background: transparent;
-    border-color: transparent;
-    border-width: 6px 0;
-    color: transparent;
-}
-
-.years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
-    -webkit-appearance: none;
-    display: inline-block;
-    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
-    background-position: center;
-    background-size: 90% 8px;
-    background-repeat: no-repeat;
-    -webkit-appearance: none;
-    width: 175px !important;
-    height: 36px;
-    border-radius: 100px;
-    overflow: hidden;
-    margin-top: 3px;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    outline: none;
-}
-
 .years_mortage__range::-webkit-slider-thumb, .interest_rate__range::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
@@ -214,13 +189,34 @@
     -moz-appearance: none;
 }
 
+.years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+}
+
+.years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
+    -webkit-appearance: none;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
+    background-position: center;
+    background-size: 90% 8px;
+    background-repeat: no-repeat;
+    width: 175px !important;
+    height: 36px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    outline: none;
+}
+
 .years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   cursor: ew-resize;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-appearance: none;
   background-color: #fff;
   pointer-events: none;
   border-radius: 100px;
@@ -229,13 +225,23 @@
   position: relative;
 }
 
-.years_mortage__range::-ms-thumb:before, .interest_rate__range::-ms-thumb:before {
+.years_mortage__range::-ms-fill-lower, .interest_rate__range::-ms-fill-lower {
   position: absolute;
   top: 8px;
   left: -2000px;
   width: 2000px;
   height: 8px;
   background: #1091cc;
+  content: ' ';
+}
+
+.years_mortage__range::-ms-fill-upper, .interest_rate__range::-ms-fill-upper {
+  position: absolute;
+  top: 8px;
+  left: -2000px;
+  width: 2000px;
+  height: 8px;
+  background: #a6a6a6;
   content: ' ';
 }
 
