@@ -168,7 +168,7 @@
     background-size: 90% 8px;
     background-repeat: no-repeat;
     -webkit-appearance: none;
-    width: 250px;
+    width: 250px !important;
     height: 36px;
     border-radius: 100px;
     overflow: hidden;
@@ -185,7 +185,7 @@
   .years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
     -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
-    cursor: ew-resize;
+    cursor: 
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -moz-appearance: none;
