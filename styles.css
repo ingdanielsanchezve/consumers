@@ -568,11 +568,16 @@ input[type=number]:focus {
   .years_mortage__range, .interest_rate__range {
      width: 268px !important;
   }
+  
   @-moz-document url-prefix() {
+    .years_mortage__value, .interest_rate__value {
+      margin-top: -12px;
+    }
     .years_mortage__range, .interest_rate__range {
        width: 250px !important;
     }     
   }
+
   .loan_amount__value{
     width: 350px !important;
   }
