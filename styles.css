@@ -231,7 +231,7 @@ input[type=range]:focus::-ms-fill-upper {
     position: relative;
   }
 
-  .years_mortage__range::-moz-range-thumb:before, .interest_rate__range::-moz-range-thumb:before {
+  .years_mortage__range::-moz-range-progress, .interest_rate__range::-moz-range-progress {
     position: absolute;
     top: 8px;
     left: -2000px;
