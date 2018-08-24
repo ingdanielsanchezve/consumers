@@ -121,6 +121,24 @@
     outline: none;
 }
 
+.years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
+    -webkit-appearance: none;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
+    background-position: center;
+    background-size: 90% 8px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    width: 175px !important;
+    height: 36px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    outline: none;
+}
+
 .years_mortage__range::-webkit-slider-thumb, .interest_rate__range::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
