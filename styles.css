@@ -250,6 +250,12 @@
   vertical-align: middle;
 }
 
+.loan_amount__value::-webkit-inner-spin-button,
+.annual_tax__value::-webkit-inner-spin-button 
+.annual_insurance__value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .loan_amount__value{
   width: 260px;
   height: 40px;
