@@ -96,20 +96,24 @@
 
         if (document.getElementById("years_mortage").value == "" || document.getElementById("years_mortage").value == "0") {
             document.getElementById("monthly_err_label").innerHTML = "Invalid Years of Mortage";
-            document.getElementById("monthly_err_label").style.display = "block";            
+            document.getElementById("monthly_err_label").style.display = "block";
+            document.getElementById("monthly_err_label").style.marginTop = "15px";            
             valid = false;
         }else{
             document.getElementById("monthly_err_label").innerHTML = "";
             document.getElementById("monthly_err_label").style.display = "none";
+            document.getElementById("monthly_err_label").style.marginTop = "0px";
             valid = true;
         }
         if (document.getElementById("interest_rate").value == "" || document.getElementById("interest_rate").value == "0") {
             document.getElementById("monthly_err_label").innerHTML = "Invalid Rate of Interest";
-            document.getElementById("monthly_err_label").style.display = "block";            
+            document.getElementById("monthly_err_label").style.display = "block";
+            document.getElementById("monthly_err_label").style.marginTop = "15px";            
             valid = false;
         }else{
             document.getElementById("monthly_err_label").innerHTML = "";
             document.getElementById("monthly_err_label").style.display = "none";
+            document.getElementById("monthly_err_label").style.marginTop = "0px";
             valid = true;
         }        
             
