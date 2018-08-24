@@ -80,7 +80,7 @@
         document.getElementById(element).innerHTML = "$ " + value.toFixed(2);
     }
 
-    function validateFields(field){
+    function validateFields(){
         var fields = ["loan_amount", "annual_tax", "annual_insurance"];        
         var errors = ["Loan Amount is mandatory", "Annual Tax is mandatory", "Annual Insurance is mandatory"];
         var error_labels = ["loan_amount_err_label", "annual_tax_err_label", "annual_insurance_err_label"];
@@ -93,6 +93,15 @@
                 valid = false;
             }
         }
+
+        if (document.getElementById("years_mortage").value == "" || document.getElementById("years_mortage").value == "0") {
+            document.getElementById("monthly_err_label").innerHTML = "Invalid Years of Mortage";
+            valid = false;
+        }
+        if (document.getElementById("interest_rate").value == "" || document.getElementById("interest_rate").value == "0") {
+            document.getElementById("monthly_err_label").innerHTML = "Invalid Rate of Interest";
+            valid = false;
+        }        
             
         return valid;
     }
