@@ -157,8 +157,10 @@ function validateFields(field) {
     if (document.getElementById(field).value == "") {
         document.getElementById(field).style.border = "solid 1px #da3535";
         document.getElementById(error_label).innerHTML = (checkMobile()) ? 'Mandatory filed' : error;
+        document.getElementById("myBtn").disabled = true;
     } else {
         document.getElementById(field).style.border = "solid 1px #a6a6a6";
         document.getElementById(error_label).innerHTML = "";
+        document.getElementById("myBtn").disabled = false;
     }
 }
