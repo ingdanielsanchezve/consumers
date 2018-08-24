@@ -543,19 +543,19 @@ input[type=number]:focus {
     font-size: 16px;
   }
   .years_mortage__range, .interest_rate__range {
-     width: 250px !important;
+     width: 268px !important;
   }
   .loan_amount__value{
-    width: 330px !important;
+    width: 350px !important;
   }
   .annual_tax__value, .annual_insurance__value{
-    width: 152px !important;
+    width: 145px !important;
   }  
   .annual_tax__label, .annual_insurance__label{
     margin-top: 7px;
   }
   .btn{
-    width: 100%;
+    width: 393px !important;
     height: 45px;
     border-radius: 4px;
     background-color: #0077c0;
