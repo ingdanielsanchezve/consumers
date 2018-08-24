@@ -106,7 +106,7 @@
 .years_mortage__range, .interest_rate__range {
     -webkit-appearance: none;
     display: inline-block;
-    /*background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);*/
+    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
     background-position: center;
     background-size: 90% 8px;
     background-repeat: no-repeat;
@@ -155,37 +155,59 @@
   cursor: ew-resize;
 }
 
+@-moz-document url-prefix() {
 
-.years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
+  .years_mortage__range, .interest_rate__range {
+    -webkit-appearance: none;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
+    background-position: center;
+    background-size: 90% 8px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    width: 250px;
+    height: 36px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    outline: none;
+  }
+
+  .years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
+      -moz-appearance: none;
+  }
+
+  .years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
+    cursor: ew-resize;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     -moz-appearance: none;
+    background-color: #fff;
+    pointer-events: none;
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+  .years_mortage__range::-moz-range-thumb:before, .interest_rate__range::-moz-range-thumb:before {
+    position: absolute;
+    top: 8px;
+    left: -2000px;
+    width: 2000px;
+    height: 8px;
+    background: #1091cc;
+    content: ' ';
+  }
+
 }
 
-.years_mortage__range::-moz-range-thumb, .interest_rate__range::-moz-range-thumb {
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
-  cursor: ew-resize;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-appearance: none;
-  background-color: #fff;
-  pointer-events: none;
-  border-radius: 100px;
-  width: 24px;
-  height: 24px;
-  position: relative;
-}
 
-.years_mortage__range::-moz-range-thumb:before, .interest_rate__range::-moz-range-thumb:before {
-  position: absolute;
-  top: 8px;
-  left: -2000px;
-  width: 2000px;
-  height: 8px;
-  background: #1091cc;
-  content: ' ';
-}
-
-.years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
+/*.years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
     -moz-appearance: none;
 }
 
@@ -237,7 +259,25 @@
 }
 .years_mortage__range::-ms-thumb:upper, .interest_rate__range::-ms-thumb:upper {
   background: #a6a6a6;
-}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .years_mortage__value, .interest_rate__value {
   width: 50px !important;
