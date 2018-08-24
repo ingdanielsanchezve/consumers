@@ -235,6 +235,9 @@
   background: #1091cc;
   content: ' ';
 }
+.years_mortage__range::-ms-thumb:upper, .interest_rate__range::-ms-thumb:upper {
+  background: #a6a6a6;
+}
 
 .years_mortage__value, .interest_rate__value {
   width: 50px !important;
