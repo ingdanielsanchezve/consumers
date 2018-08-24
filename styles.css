@@ -204,7 +204,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 
   input[type=range]::-moz-range-track {
-      width: 300px;
+      width: 250px;
       height: 5px;
       background: #ddd;
       border: none;
@@ -217,6 +217,7 @@ input[type=range]:focus::-ms-fill-upper {
       width: 24px;
       border-radius: 50%;
       background: #ffffff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   }
 
   /*hide the outline behind the border*/
