@@ -225,26 +225,6 @@
   position: relative;
 }
 
-.years_mortage__range::-ms-fill-lower, .interest_rate__range::-ms-fill-lower {
-  position: absolute;
-  top: 8px;
-  left: -2000px;
-  width: 2000px;
-  height: 8px;
-  background: #1091cc;
-  content: ' ';
-}
-
-.years_mortage__range::-ms-fill-upper, .interest_rate__range::-ms-fill-upper {
-  position: absolute;
-  top: 8px;
-  left: -2000px;
-  width: 2000px;
-  height: 8px;
-  background: #a6a6a6;
-  content: ' ';
-}
-
 .years_mortage__value, .interest_rate__value {
   width: 50px !important;
   height: 40px;
