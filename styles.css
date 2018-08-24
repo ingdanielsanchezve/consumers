@@ -311,6 +311,8 @@ input[type=number]:focus {
 }
 
 .monthly_err_label{
+  margin-top: 15px;
+  padding-bottom: 0px;
   display: none
 }
 
@@ -423,7 +425,7 @@ input[type=number]:focus {
   letter-spacing: 0.2px;
   text-align: left;
   color: #da3535;
-  display: no;
+  display: block;
   padding-bottom: 12px;
 }
 
