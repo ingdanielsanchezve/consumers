@@ -201,7 +201,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-size: 90% 8px;
     background-repeat: no-repeat;
     width: 250px !important;
-    height: 36px;
+    height: 8px;
     border-radius: 100px;
     overflow: hidden;
     margin-top: 3px;
