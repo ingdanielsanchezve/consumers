@@ -195,6 +195,12 @@ input[type=range]:focus::-ms-fill-upper {
 
 @-moz-document url-prefix() {
 
+  .mortage_label, .interest_label{
+    margin-bottom: 5px;
+  }
+  .input__min__value__label, .input__max__value__label{
+    margin-top: 0px;
+  }
   .years_mortage__range::-moz-range-track, .interest_rate__range::-moz-range-track {
     display: inline-block;
     background-position: center;
