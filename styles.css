@@ -236,6 +236,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 2000px;
     height: 8px;
     background: #1091cc;
+    border-radius: 100px;
     content: ' ';
   }
 
