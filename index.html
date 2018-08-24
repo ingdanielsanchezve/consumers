@@ -42,7 +42,7 @@
                             <label class="input__label" for="loan_amount">Loan Amount</label>
                             <div class="input__container">
                                 <span class="input__addon">$</span>
-                                <input class="loan_amount__value" type="number" name="loan_amount" id="loan_amount">
+                                <input class="loan_amount__value" type="number" name="loan_amount" id="loan_amount" onblur="validateFields(this.id)">
                             </div>
                             <label id="loan_amount_err_label" class="error_label"></label>
                         </div>
@@ -51,7 +51,7 @@
                             <label class="input__label annual_tax__label" for="annual_tax">Annual Tax</label>
                             <div class="input__container">
                                 <span class="input__addon">$</span>
-                                <input class="annual_tax__value" type="number" name="annual_tax" id="annual_tax">
+                                <input class="annual_tax__value" type="number" name="annual_tax" id="annual_tax" onblur="validateFields(this.id)">
                             </div>
                             <label id="annual_tax_err_label" class="error_label"></label>
                         </div>
@@ -60,7 +60,7 @@
                             <label class="input__label annual_insurance__label" for="annual_insurance">Annual Insurance</label>
                             <div class="input__container">
                                 <span class="input__addon annual_insurance__addon">$</span>
-                                <input class="annual_insurance__value" type="number" name="annual_insurance" id="annual_insurance">
+                                <input class="annual_insurance__value" type="number" name="annual_insurance" id="annual_insurance" onblur="validateFields(this.id)">
                             </div>
                             <label id="annual_insurance_err_label" class="error_label insurance_err_label"></label>
                         </div>
