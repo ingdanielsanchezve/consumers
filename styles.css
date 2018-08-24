@@ -217,12 +217,23 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
   cursor: ew-resize;
   box-sizing: border-box;
+  -moz-appearance: none;
   background-color: #fff;
   pointer-events: none;
   border-radius: 100px;
   width: 24px;
   height: 24px;
   position: relative;
+}
+
+.years_mortage__range::-ms-thumb:lower, .interest_rate__range::-ms-thumb:lower {
+  position: absolute;
+  top: 8px;
+  left: -2000px;
+  width: 2000px;
+  height: 8px;
+  background: #1091cc;
+  content: ' ';
 }
 
 .years_mortage__value, .interest_rate__value {
