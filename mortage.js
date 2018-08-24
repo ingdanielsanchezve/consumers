@@ -20,7 +20,7 @@
     if (checkMobile()){
         document.getElementById("resultsPanel").style.maxHeight = "0";
         document.getElementById("resultsPanel").style.overflow = "hidden";
-        document.getElementById("resultsPanel").style.transition = "max-height 1s ease-out";
+        document.getElementById("resultsPanel").style.transition = "max-height 2s linear";
         document.getElementById("resultsPanel").style.display = "none";
     }
 
@@ -180,10 +180,10 @@ function validateFields(field) {
     if (document.getElementById(field).value == "") {
         document.getElementById(field).style.border = "solid 1px #da3535";
         document.getElementById(error_label).innerHTML = (checkMobile()) ? 'Mandatory filed' : error;
-        document.getElementById("myBtn").disabled = true;
+        document.getElementById("calculateMortage").disabled = true;
     } else {
         document.getElementById(field).style.border = "solid 1px #a6a6a6";
         document.getElementById(error_label).innerHTML = "";
-        document.getElementById("myBtn").disabled = false;
+        document.getElementById("calculateMortage").disabled = false;
     }
 }
