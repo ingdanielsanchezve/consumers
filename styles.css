@@ -131,7 +131,7 @@
 .years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
     -webkit-appearance: none;
     display: inline-block;
-    /*background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);*/
+    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
     background-position: center;
     background-size: 90% 8px;
     background-repeat: no-repeat;
