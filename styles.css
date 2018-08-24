@@ -539,6 +539,7 @@ input[type=number]:focus {
   .input__min__value__label, .input__max__value__label {
     width: 24px  !important;
     font-size: 16px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
   .input__label{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
