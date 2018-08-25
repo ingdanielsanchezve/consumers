@@ -58,8 +58,10 @@
                 field.style.fontSize = "18px"
                 field.style.marginTop = "19px"
             }
-            setTimeout(function(){ window.scrollTo(0, 300) },1);
-            panel.classList.remove('collapsed');
+            if (panel.classList.contains('collapsed')){
+                setTimeout(function(){ window.scrollTo(0, 300) },200);
+                panel.classList.remove('collapsed');
+            }
         }else{
             field.className = "results_value_display";
             if (elementId == "mortage_value")
