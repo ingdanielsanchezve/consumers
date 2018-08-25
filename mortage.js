@@ -15,11 +15,8 @@
     }    
 
     if (checkMobile()){
-        var resultsPanel = document.getElementById("resultsPanel");
-            resultsPanel.style.maxHeight = "0";
-            resultsPanel.style.overflow = "hidden";
-            resultsPanel.style.transition = "max-height 2s linear";
-            resultsPanel.style.display = "none";
+        var panel = document.getElementById('resultsPanel');
+            panel.classList.add('collapsed');
     }
 
     function showInterest(){
@@ -51,14 +48,9 @@
     }
 
     function animatePanel(){
-        window.scrollTo(10, 600);
         var panel = document.getElementById("resultsPanel");
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.display = 'block';
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
+            panel.classList.remove('collapsed');
+            window.scrollBy(1, 2000);
     }
 
     function showResults(elementId, value, isMobile){

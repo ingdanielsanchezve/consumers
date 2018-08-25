@@ -34,7 +34,7 @@
   width: 295px !important;
   height: 289px;
   background-color: #eaf6fa;
-  padding-top: 41px;
+  /* padding-top: 41px; */
   padding-left: 20px;
   padding-right: 25px;
   margin: -20px 0 0 10px;
@@ -103,7 +103,7 @@
   margin-top: 11px;
 }
 
-input[type=range]::-ms-track {
+.years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
     width: 260px;
     height: 8px;
     padding-bottom: 4px;
@@ -113,15 +113,15 @@ input[type=range]::-ms-track {
     border-width: 6px 0;
     color: transparent;
 }
-input[type=range]::-ms-fill-lower {
+.years_mortage__range::-ms-fill-lower, .interest_rate__range::-ms-fill-lower {
     background: #1091cc;
     border-radius: 10px;
 }
-input[type=range]::-ms-fill-upper {
+.years_mortage__range::-ms-fill-upper, .interest_rate__range::-ms-fill-upper {
     background: #a6a6a6;
     border-radius: 10px;
 }
-input[type=range]::-ms-thumb {
+.years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
     border: none;
     height: 24px;
     width: 24px;
@@ -129,13 +129,26 @@ input[type=range]::-ms-thumb {
     background: #ffffff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
 }
-input[type=range]:focus::-ms-fill-lower {
+.years_mortage__range:focus::-ms-fill-lower, .interest_rate__range:focus::-ms-fill-lower {
     background: #1091cc;
 }
-input[type=range]:focus::-ms-fill-upper {
+.years_mortage__range:focus::-ms-fill-upper, .interest_rate__range:focus::-ms-fill-upper {
     background: #a6a6a6;
 }
 
+/* Main Feature */
+.panel {
+  overflow: hidden;
+  max-height: 1000px;
+  -webkit-transition: max-height 0.5s; 
+  -moz-transition: max-height 0.5s; 
+  -ms-transition: max-height 0.5s; 
+  -o-transition: max-height 0.5s; 
+  transition: max-height 0.5s;
+}
+.collapsed {
+  max-height: 0px;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
 
@@ -147,7 +160,7 @@ input[type=range]:focus::-ms-fill-upper {
       background-size: 90% 8px;
       background-repeat: no-repeat;
       -webkit-appearance: none;
-      width: 175px !important;
+      width: 183px !important;
       height: 36px;
       border-radius: 100px;
       overflow: hidden;
@@ -313,6 +326,7 @@ input[type=number]:focus {
   letter-spacing: 0.6px;
   text-align: center;
   color: #ffffff;
+  margin-top: 37px;
 }
 
 .monthly_err_label{
@@ -359,6 +373,7 @@ input[type=number]:focus {
   text-align: left;
   color: #3e3d3f;
   margin-bottom: 30px;
+  margin-top: 41px;
 }
 
 .results_label{
@@ -698,7 +713,7 @@ input[type=number]:focus {
 
 .small__phone-1, .mid__phone-1, .tablet-1, .desktop-1, .small__phone-2, .mid__phone-2, .tablet-2, .desktop-2, .small__phone-3, .mid__phone-3, .tablet-3, .desktop-3, .small__phone-4, .mid__phone-4, .tablet-4, .desktop-4, .small__phone-5, .mid__phone-5, .tablet-5, .desktop-5, .small__phone-6, .mid__phone-6, .tablet-6, .desktop-6, .small__phone-7, .mid__phone-7, .tablet-7, .desktop-7, .small__phone-8, .mid__phone-8, .tablet-8, .desktop-8, .small__phone-9, .mid__phone-9, .tablet-9, .desktop-9, .small__phone-10, .mid__phone-10, .tablet-10, .desktop-10{
   position: relative;
-  min-height: 1px;
+  /* min-height: 1px; */
 }
 .small__phone-1, .small__phone-2, .small__phone-3, .small__phone-4, .small__phone-5, .small__phone-6, .small__phone-7, .small__phone-8, .small__phone-9, .small__phone-10{
   float: left;
