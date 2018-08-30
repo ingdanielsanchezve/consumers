@@ -83,7 +83,7 @@
 }
 
 .collapsed {
-  max-height: 0px;
+  max-height: 0px !important;
 }
 
 .container {
@@ -119,7 +119,7 @@
   position:absolute;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px !important;
-  top:11px;
+  top: 14px;
   left: 25px;
 }
 
