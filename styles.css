@@ -1,43 +1,5 @@
-.app__title{
-  height: 24px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #006ea0;
-  margin: 23px 0 0 20px;
-}
-.app__title__separator{
-  width: 300px;
-  height: 1px;
-  border-top: solid 1px #cacaca;
-  margin: 10px 0 0 20px;
-}
-
-.calculator {
-  width: 300px !important;
-  height: 450px;
-  object-fit: contain;
-  border-radius: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
-  margin: 20px 0 0 10px;
-  padding: 15px 20px;
-  z-index: 1;
-}
-
-.results {
-  width: 295px !important;
-  height: 306px;
-  background-color: #eaf6fa;
-  /* padding-top: 41px; */
-  padding-left: 20px;
-  padding-right: 25px;
-  margin: -20px 0 122px 10px;
+.annual_insurance__value, .annual_insurance__label, .annual_insurance__addon, .insurance_err_label{
+  margin-left: 11px;
 }
 
 .app__label{
@@ -60,10 +22,111 @@
   margin-top: 5px;
 }
 
-.results__separator{
-  width: 192px;
-  height: 2px;
+.annual_tax__value, .annual_insurance__value{
+  width: 100px !important;
+  height: 40px;
+  padding-left: 40px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #a6a6a6;
+  display: inline-block;
+}
+
+.app__title{
+  height: 24px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #006ea0;
+  margin: 23px 0 0 20px;
+}
+
+.app__title__separator{
+  width: 300px;
+  height: 1px;
   border-top: solid 1px #cacaca;
+  margin: 10px 0 0 20px;
+}
+
+.btn{
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #0077c0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 37px;
+}
+
+.calculator {
+  width: 300px !important;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+  margin: 20px 0 0 10px;
+  padding: 15px 20px;
+  z-index: 1;
+}
+
+.collapsed {
+  max-height: 0px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* height: 1200px; */
+}
+
+.error_label {
+  height: 15px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #da3535;
+  display: block;
+  padding-bottom: 12px;
+}
+
+.form__group{
+  width: 260px;
+  height: 67px;
+  margin-top: 10px;
+}
+
+.input__addon {
+  position:absolute;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px !important;
+  top:11px;
+  left: 25px;
+}
+
+.input__container {
+    position:relative;
+    width: 182px;
+    margin-top: 5px;
 }
 
 .input__label {
@@ -77,16 +140,6 @@
   text-align: left;
   color: #3e3d3f;
   display: block;
-}
-
-.form__group{
-  width: 260px;
-  height: 67px;
-  margin-top: 10px;
-}
-
-.mortage__form{
-    margin-top: 15px;
 }
 
 .input__min__value__label, .input__max__value__label {
@@ -103,6 +156,222 @@
   margin-top: 11px;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]:focus {
+  -webkit-box-shadow: none;
+  box-shadow: 0 0 4px 0 rgba(62, 61, 63, 0.62);
+  outline: solid 1px #3e3d3f;
+}
+
+.loan_amount__value{
+  width: 260px;
+  height: 40px;
+  padding-left: 40px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #a6a6a6;
+  display: block;
+}
+
+.monthly_err_label{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #da3535;
+  display: none
+}
+
+.mortage__form{
+    margin-top: 15px;
+}
+
+.panel {
+  overflow: hidden;
+  max-height: 1000px;
+  -webkit-transition: max-height 1.8s; 
+  -moz-transition: max-height 1.8s; 
+  -ms-transition: max-height 1.8s; 
+  -o-transition: max-height 1.8s; 
+  transition: max-height 1.8s;
+}
+
+.results {
+  width: 295px !important;
+  height: 306px;
+  background-color: #eaf6fa;
+  /* padding-top: 41px; */
+  padding-left: 20px;
+  padding-right: 25px;
+  margin: -20px 0 122px 10px;
+}
+
+.results_mortage__label {
+  margin-top: 20px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.results_label{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.results__separator{
+  width: 192px;
+  height: 2px;
+  border-top: solid 1px #cacaca;
+}
+
+.results__title {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+  margin-bottom: 30px;
+}
+
+.results_value{
+  opacity: 0.2;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+  margin-bottom: 18px;
+}
+
+.results_value_display{
+  height: 30px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+  margin-bottom: 12px;  
+}
+
+.results_value_display_mobile{
+  height: 16px;
+  font-family: "San Francisco Display Ultralight";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #3e3d3f;
+}
+
+.row {
+  margin-right: -15px;
+}
+
+.show__small_phones{
+  display: none !important;
+}
+
+.small__phone-10, .mid__phone-10, .tablet-10, .desktop-10, .small__phone-20, .mid__phone-20, .tablet-20, .desktop-20, .small__phone-30, .mid__phone-30, .tablet-30, .desktop-30, .small__phone-40, .mid__phone-40, .tablet-40, .desktop-40, .small__phone-50, .mid__phone-50, .tablet-50, .desktop-50, .small__phone-60, .mid__phone-60, .tablet-60, .desktop-60, .small__phone-70, .mid__phone-70, .tablet-70, .desktop-70, .small__phone-80, .mid__phone-80, .tablet-80, .desktop-80, .small__phone-90, .mid__phone-90, .tablet-90, .desktop-90, .small__phone-100, .mid__phone-100, .tablet-100, .desktop-100{
+  position: relative;
+  /* min-height: 1px; */
+}
+
+.small__phone-10, .small__phone-20, .small__phone-30, .small__phone-40, .small__phone-50, .small__phone-60, .small__phone-70, .small__phone-80, .small__phone-90, .small__phone-100{
+  float: left;
+}
+
+.small__phone-100 {
+  width: 100%; 
+}
+
+.small__phone-90 {
+  width: 90%; 
+}
+
+.small__phone-80 {
+  width: 80%; 
+}
+
+.small__phone-70 {
+  width: 70%; 
+}
+
+.small__phone-60 {
+  width: 60%; 
+}
+
+.small__phone-50 {
+  width: 50%; 
+}
+
+.small__phone-40 {
+  width: 40%; 
+}
+
+.small__phone-30 {
+  width: 30%; 
+}
+
+.small__phone-20 {
+  width: 20%; 
+}
+
+.small__phone-10 {
+  width: 10%;
+}
+
+.years_mortage__value, .interest_rate__value {
+  width: 50px !important;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #a6a6a6;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .years_mortage__range::-ms-track, .interest_rate__range::-ms-track {
     width: 260px;
     height: 8px;
@@ -113,14 +382,17 @@
     border-width: 6px 0;
     color: transparent;
 }
+
 .years_mortage__range::-ms-fill-lower, .interest_rate__range::-ms-fill-lower {
     background: #1091cc;
     border-radius: 10px;
 }
+
 .years_mortage__range::-ms-fill-upper, .interest_rate__range::-ms-fill-upper {
     background: #a6a6a6;
     border-radius: 10px;
 }
+
 .years_mortage__range::-ms-thumb, .interest_rate__range::-ms-thumb {
     border: none;
     height: 24px;
@@ -129,25 +401,48 @@
     background: #ffffff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.27);
 }
+
 .years_mortage__range:focus::-ms-fill-lower, .interest_rate__range:focus::-ms-fill-lower {
     background: #1091cc;
 }
+
 .years_mortage__range:focus::-ms-fill-upper, .interest_rate__range:focus::-ms-fill-upper {
     background: #a6a6a6;
 }
 
-/* Main Feature */
-.panel {
-  overflow: hidden;
-  max-height: 1000px;
-  -webkit-transition: max-height 1.8s; 
-  -moz-transition: max-height 1.8s; 
-  -ms-transition: max-height 1.8s; 
-  -o-transition: max-height 1.8s; 
-  transition: max-height 1.8s;
+@font-face {
+  font-family: "San Francisco Display Ultralight";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.svg#San Francisco Display Ultralight") format("svg")
 }
-.collapsed {
-  max-height: 0px;
+
+@font-face {
+  font-family: "San Francisco Display Thin";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg#San Francisco Display Thin") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Semibold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.svg#San Francisco Display Semibold") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.svg#San Francisco Display Bold") format("svg")
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
@@ -208,11 +503,11 @@
 
 @-moz-document url-prefix() {
 
-  .mortage_label, .interest_label{
-    margin-bottom: 5px;
-  }
   .input__min__value__label, .input__max__value__label{
     margin-top: 0px;
+  }
+  .mortage_label, .interest_label{
+    margin-bottom: 5px;
   }
   .years_mortage__range::-moz-range-track, .interest_rate__range::-moz-range-track {
     display: inline-block;
@@ -261,208 +556,31 @@
 
 }
 
-.years_mortage__value, .interest_rate__value {
-  width: 50px !important;
-  height: 40px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  border: solid 1px #a6a6a6;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-input[type=number] {
-    -moz-appearance:textfield;
-}
-
-.loan_amount__value{
-  width: 260px;
-  height: 40px;
-  padding-left: 40px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  border: solid 1px #a6a6a6;
-  display: block;
-}
-
-.annual_tax__value, .annual_insurance__value{
-  width: 100px !important;
-  height: 40px;
-  padding-left: 40px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  border: solid 1px #a6a6a6;
-  display: inline-block;
-}
-
-.annual_insurance__value, .annual_insurance__label, .annual_insurance__addon, .insurance_err_label{
-  margin-left: 11px;
-}
-
-input[type=number]:focus {
-  -webkit-box-shadow: none;
-  box-shadow: 0 0 4px 0 rgba(62, 61, 63, 0.62);
-  outline: solid 1px #3e3d3f;
-}
-
-.btn{
-  width: 100%;
-  height: 40px;
-  border-radius: 4px;
-  background-color: #0077c0;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 37px;
-}
-
-.monthly_err_label{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #da3535;
-  display: none
-}
-
-.input__container {
-    position:relative;
-    width: 182px;
-    margin-top: 5px;
-}
-
-.input__addon {
-  position:absolute;
-  font-size: 16px;
-  top:11px;
-  left: 25px;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  /* height: 1200px; */
-}
-
-.results__title {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 22px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.36;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3e3d3f;
-  margin-bottom: 30px;
-}
-
-.results_label{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.05;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3e3d3f;
-}
-.results_value{
-  opacity: 0.2;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3e3d3f;
-  margin-bottom: 18px;
-}
-
-.results_value_display{
-  height: 30px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3e3d3f;
-  margin-bottom: 12px;  
-}
-
-.results_value_display_mobile{
-  height: 16px;
-  font-family: SFUIDisplay;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: right;
-  color: #3e3d3f;
-}
-
-.results_mortage__label {
-  margin-top: 20px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 17px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3e3d3f;
-}
-
-.error_label {
-  height: 15px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #da3535;
-  display: block;
-  padding-bottom: 12px;
-}
-
-
-@media (min-width: 750px) {
+@media (min-width: 650px) {
   
-  .container {
-    width: 900px;    
-    margin: 0 auto;
+  .app__label{
+    width: 391px;
+    height: 24px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #3e3d3f;
   }
+  .app__separator{
+    width: 391px;
+    margin-top: 10.5px !important;
+  }    
+  .annual_tax__value, .annual_insurance__value{
+    width: 145px !important;
+  }  
+  .annual_tax__label, .annual_insurance__label{
+    margin-top: 7px;
+  }  
   .app__title{
     height: 30px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -482,76 +600,6 @@ input[type=number]:focus {
       margin-top: 15px;
       margin-left: 25px;
   }
-  .app__label{
-    width: 391px;
-    height: 24px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-    text-align: left;
-    color: #3e3d3f;
-  }
-  .app__separator{
-    width: 391px;
-    margin-top: 10.5px !important;
-  }
-  .mortage__form{
-    margin-top: 35px;
-  }
-  .form__group{
-    margin-top: 0px;
-    margin-bottom: -3px;
-    padding-bottom: 15px;
-  }
-  .input__min__value__label, .input__max__value__label {
-    width: 24px  !important;
-    font-size: 16px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  }
-  .input__label{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.21;
-    letter-spacing: 0.2px;
-    text-align: left;
-    color: #3e3d3f;
-    /* margin-top: 5px; */
-  }
-  .years_mortage__value, .interest_rate__value {
-    width: 60px !important;
-    margin-left: 7px;
-    margin-top: -2px;
-    font-size: 16px;
-  }
-  .years_mortage__range, .interest_rate__range {
-     width: 268px !important;
-  }
-  
-  @-moz-document url-prefix() {
-    .years_mortage__value, .interest_rate__value {
-      margin-top: -12px;
-    }
-    .years_mortage__range, .interest_rate__range {
-       width: 250px !important;
-    }     
-  }
-
-  .loan_amount__value{
-    width: 350px !important;
-  }
-  .annual_tax__value, .annual_insurance__value{
-    width: 145px !important;
-  }  
-  .annual_tax__label, .annual_insurance__label{
-    margin-top: 7px;
-  }
   .btn{
     width: 393px !important;
     height: 45px;
@@ -567,7 +615,7 @@ input[type=number]:focus {
     text-align: center;
     color: #ffffff;
     margin-top: 13px;
-  }
+  }  
   .calculator {
     width: 390px !important;
     height: 474px;
@@ -576,137 +624,36 @@ input[type=number]:focus {
     padding-right: 40px !important;
     margin-left: 65px;
     margin-top: 25px;
-  }
-  .results{
-    margin-top: 66px;
-    margin-left: -20px;
-    height: 368px;
-    width: 185px !important;
-    padding-top: 36px;
-    padding-left: 62px;
-    padding-right: 46px;
-    padding-bottom: 35px;
-  }
-}
-.row {
-  margin-right: -15px;
-}
-
-.show__small_phones{
-  display: none !important;
-}
-
-@media (max-width: 750px) {
-  body{
-    height: 900px;
-  }
-  .results__title {
-    margin-top: 41px;
-  }
-  .show__small_phones {
-    display: block !important;
-  }
-  .results__separator{
-    display: block;
-    width: 100%;
-    height: 2px;
-    border-top: solid 1px #cacaca;
-  }
-  .results__group{
-    height: 30px;
-    border-bottom: solid 1px #b2b2b2;
-    padding-top: 16px;
-    display: block;
-  }
-  .results_mortage__label{
-    margin-top: 19px;
-  }
-  .results_mortage_value{
-    margin-top: 19px;
-  }
-  .results_label, .results_mortage__label{
-    float: left;
-    height: 14px;
-    font-family: SFUIDisplay;
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #3e3d3f;
-  }
-  .results_value{
-    float: right;
-    height: 16px;
-    font-family: SFUIDisplay;
+  }  
+  .container {
+    width: 900px;    
+    margin: 0 auto;
+  }  
+  .input__label{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
+    line-height: 1.21;
+    letter-spacing: 0.2px;
+    text-align: left;
     color: #3e3d3f;
+    /* margin-top: 5px; */
+  }  
+  .input__min__value__label, .input__max__value__label {
+    width: 24px  !important;
+    font-size: 16px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
-  .results_mortage_value {
-    float: right;
-    height: 21px;
-    font-family: SFUIDisplay;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #3e3d3f;
-  }
-  .hide__small_phones {
-    display: none !important;
-  }
-}
-
-.small__phone-10, .mid__phone-10, .tablet-10, .desktop-10, .small__phone-20, .mid__phone-20, .tablet-20, .desktop-20, .small__phone-30, .mid__phone-30, .tablet-30, .desktop-30, .small__phone-40, .mid__phone-40, .tablet-40, .desktop-40, .small__phone-50, .mid__phone-50, .tablet-50, .desktop-50, .small__phone-60, .mid__phone-60, .tablet-60, .desktop-60, .small__phone-70, .mid__phone-70, .tablet-70, .desktop-70, .small__phone-80, .mid__phone-80, .tablet-80, .desktop-80, .small__phone-90, .mid__phone-90, .tablet-90, .desktop-90, .small__phone-100, .mid__phone-100, .tablet-100, .desktop-100{
-  position: relative;
-  /* min-height: 1px; */
-}
-.small__phone-10, .small__phone-20, .small__phone-30, .small__phone-40, .small__phone-50, .small__phone-60, .small__phone-70, .small__phone-80, .small__phone-90, .small__phone-100{
-  float: left;
-}
-.small__phone-100 {
-  width: 100%; 
-}
-.small__phone-90 {
-  width: 90%; 
-}
-.small__phone-80 {
-  width: 80%; 
-}
-.small__phone-70 {
-  width: 70%; 
-}
-.small__phone-60 {
-  width: 60%; 
-}
-.small__phone-50 {
-  width: 50%; 
-}
-.small__phone-40 {
-  width: 40%; 
-}
-.small__phone-30 {
-  width: 30%; 
-}
-.small__phone-20 {
-  width: 20%; 
-}
-.small__phone-10 {
-  width: 10%;
-}
-
-@media (min-width: 750px) {
+  .form__group{
+    margin-top: 0px;
+    margin-bottom: -3px;
+    padding-bottom: 15px;
+  }  
+  .loan_amount__value{
+    width: 350px !important;
+  }  
   .mid__phone-10, .mid__phone-20, .mid__phone-30, .mid__phone-40, .mid__phone-50, .mid__phone-60, .mid__phone-70, .mid__phone-80, .mid__phone-90, .mid__phone-100{
     float: left;
   }
@@ -741,7 +688,100 @@ input[type=number]:focus {
     width: 10% 
   }
 
+  .mortage__form{
+    margin-top: 35px;
+  }
+  .results{
+    margin-top: 66px;
+    margin-left: -20px;
+    height: 368px;
+    width: 185px !important;
+    padding-top: 36px;
+    padding-left: 62px;
+    padding-right: 46px;
+    padding-bottom: 35px;
+  }    
+  .years_mortage__value, .interest_rate__value {
+    width: 60px !important;
+    margin-left: 7px;
+    margin-top: -2px;
+    font-size: 16px;
+  }
+  .years_mortage__range, .interest_rate__range {
+     width: 268px !important;
+  }
+  
+  @-moz-document url-prefix() {
+    .years_mortage__value, .interest_rate__value {
+      margin-top: -12px;
+    }
+    .years_mortage__range, .interest_rate__range {
+       width: 250px !important;
+    }     
+  }
 }
+
+@media (max-width: 650px) {
+  body{
+    height: 900px;
+  }
+  .hide__small_phones {
+    display: none !important;
+  }
+  .input__addon {
+    font-size: 16px;
+  }
+  .results__group{
+    height: 30px;
+    border-bottom: solid 1px #b2b2b2;
+    padding-top: 16px;
+    display: block;
+  }
+  .results_mortage__label{
+    margin-top: 19px;
+    font-size: 14px;
+  }
+  .results_mortage_value {
+    margin-top: 19px;
+    float: right;
+    height: 21px;
+    font-family: "San Francisco Display Ultralight";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #3e3d3f;
+  }
+  .results__separator{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-top: solid 1px #cacaca;
+  }      
+  .results__title {
+    margin-top: 41px;
+  }  
+  .results_value{
+    float: right;
+    height: 16px;
+    font-family: "San Francisco Display Ultralight";
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #3e3d3f;
+  }  
+  .show__small_phones {
+    display: block !important;
+  }  
+}
+
 @media (min-width: 992px) {
   .tablet-10, .tablet-20, .tablet-30, .tablet-40, .tablet-50, .tablet-60, .tablet-70, .tablet-80, .tablet-90, .tablet-100 {
     float: left;
@@ -778,6 +818,7 @@ input[type=number]:focus {
   }
 
 }
+
 @media (min-width: 1200px) {
   .desktop-10, .desktop-20, .desktop-30, .desktop-40, .desktop-50, .desktop-60, .desktop-70, .desktop-80, .desktop-90, .desktop-100{
     float: left;
