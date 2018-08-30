@@ -484,7 +484,7 @@ input[type=number]:focus {
     position: relative;
   }
 
-  .years_mortage__range::-webkit-slider-thumb:before, .interest_rate__range::-webkit-slider-thumb:before {
+  .years_mortage__range::-webkit-slider-thumb::before, .interest_rate__range::-webkit-slider-thumb::before {
     position: absolute;
     top: 8px;
     left: -2000px;
