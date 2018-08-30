@@ -504,16 +504,24 @@ input[type=number]:focus {
 
   .input__min__value__label, .input__max__value__label{
     margin-top: 0px;
+    margin-left: 5px;
   }
   .mortage_label, .interest_label{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  .years_mortage__value, .interest_rate__value {
+        margin-top: -28px;
+        float: inline-end;
+    }
+  .years_mortage__range, .interest_rate__range {
+    width: 160px !important;
   }
   .years_mortage__range::-moz-range-track, .interest_rate__range::-moz-range-track {
     display: inline-block;
     background-position: center;
     background-size: 90% 8px;
     background-repeat: no-repeat;
-    width: 250px !important;
     height: 8px;
     border-radius: 100px;
     overflow: hidden;
@@ -551,6 +559,12 @@ input[type=number]:focus {
     background: #1091cc;
     border-radius: 100px;
     content: ' ';
+  }
+
+  @media (min-width: 650px) {
+    .years_mortage__range, .interest_rate__range {
+        width: 240px !important;
+    }    
   }
 
 }
@@ -722,7 +736,7 @@ input[type=number]:focus {
       margin-top: -12px;
     }
     .years_mortage__range, .interest_rate__range {
-       width: 250px !important;
+       width: 240px !important;
     }     
   }
 }
