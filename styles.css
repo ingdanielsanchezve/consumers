@@ -274,7 +274,6 @@ input[type=number]:focus {
   letter-spacing: normal;
   text-align: left;
   color: #3e3d3f;
-  margin-bottom: 18px;
 }
 
 .results_value_display{
@@ -779,7 +778,7 @@ input[type=number]:focus {
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
+    line-height: 2.05;
     letter-spacing: normal;
     text-align: right;
     color: #3e3d3f;
